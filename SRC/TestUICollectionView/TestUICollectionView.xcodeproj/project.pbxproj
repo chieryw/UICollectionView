@@ -14,6 +14,7 @@
 		29E894DA1A09FC900000FA95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E894D91A09FC900000FA95 /* Images.xcassets */; };
 		29E894DD1A09FC900000FA95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E894DB1A09FC900000FA95 /* LaunchScreen.xib */; };
 		29E894E91A09FC900000FA95 /* TestUICollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894E81A09FC900000FA95 /* TestUICollectionViewTests.m */; };
+		29E894F41A0A03D40000FA95 /* CustomReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894F31A0A03D40000FA95 /* CustomReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		29E894E21A09FC900000FA95 /* TestUICollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUICollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E894E71A09FC900000FA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29E894E81A09FC900000FA95 /* TestUICollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUICollectionViewTests.m; sourceTree = "<group>"; };
+		29E894F21A0A03D40000FA95 /* CustomReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomReusableView.h; sourceTree = "<group>"; };
+		29E894F31A0A03D40000FA95 /* CustomReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				29E894D91A09FC900000FA95 /* Images.xcassets */,
 				29E894DB1A09FC900000FA95 /* LaunchScreen.xib */,
 				29E894CC1A09FC900000FA95 /* Supporting Files */,
+				29E894F21A0A03D40000FA95 /* CustomReusableView.h */,
+				29E894F31A0A03D40000FA95 /* CustomReusableView.m */,
 			);
 			path = TestUICollectionView;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E894F41A0A03D40000FA95 /* CustomReusableView.m in Sources */,
 				29E894D51A09FC900000FA95 /* ViewController.m in Sources */,
 				29E894D21A09FC900000FA95 /* AppDelegate.m in Sources */,
 				29E894CF1A09FC900000FA95 /* main.m in Sources */,
