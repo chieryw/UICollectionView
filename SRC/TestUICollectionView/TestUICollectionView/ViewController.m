@@ -8,11 +8,12 @@
 
 #import "ViewController.h"
 #import "CustomReusableView.h"
+#import "UIScrollView+PullToRefreshCoreText.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
     UICollectionView *_collectionView;
-    NSArray *_dataArray;
+    NSMutableArray *_dataArray;
 }
 
 @end
@@ -32,6 +33,7 @@
     
     [self configureDataArray];
     [self initCollectionView];
+    [self addReflesh];
 }
 
 #pragma mark - 
@@ -39,11 +41,35 @@
 - (void)configureDataArray
 {
     if (!_dataArray) {
-        _dataArray = @[
+        _dataArray = [@[
+                       [UIColor redColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor redColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor redColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor redColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor redColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor redColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
+                       [UIColor blueColor],
+                       [UIColor yellowColor],
                        [UIColor redColor],
                        [UIColor blueColor],
                        [UIColor yellowColor]
-                       ];
+                       ] mutableCopy];
     }
 }
 
@@ -74,11 +100,41 @@
         // 数据来源
         _collectionView.dataSource = self;
         
+        _collectionView.scrollEnabled = YES;
+        
         _collectionView.backgroundColor = [UIColor colorWithRed:10/255.0 green:100/255.0 blue:18/255.0 alpha:1];
         
         // 添加collectionView
         [self.view addSubview:_collectionView];
     }
+}
+
+- (void)addReflesh
+{
+    if (_collectionView) {
+        __weak typeof(self) weakSelf = self;
+        [_collectionView addPullToRefreshWithPullText:@"Loading"
+                                        pullTextColor:[UIColor blackColor]
+                                         pullTextFont:[UIFont systemFontOfSize:20]
+                                       refreshingText:@"Finish"
+                                  refreshingTextColor:[UIColor redColor]
+                                   refreshingTextFont:[UIFont systemFontOfSize:20]
+                                               action:^{
+                                                   [weakSelf changedDataArray];
+                                               }];
+    }
+}
+
+- (void)changedDataArray
+{
+    __weak typeof(self) weakSelf = self;
+    __weak typeof(_collectionView) weakCollectionView = _collectionView;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf->_dataArray addObject:[UIColor blackColor]];
+        [strongSelf->_collectionView reloadData];
+        [weakCollectionView finishLoading];
+    });
 }
 
 #pragma mark - UICollectionDataSource
@@ -89,14 +145,14 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return _dataArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identifierCell = @"cell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifierCell forIndexPath:indexPath];
-    cell.backgroundColor = _dataArray[indexPath.row%3];
+    cell.backgroundColor = _dataArray[indexPath.row];
     return cell;
 }
 
@@ -129,16 +185,16 @@
     NSInteger band = indexPath.row%4;
     switch (band) {
         case 0:
-            return CGSizeMake(100, 200);
+            return CGSizeMake(100, 100);
             break;
         case 1:
-            return CGSizeMake(220, 80);
+            return CGSizeMake(60, 80);
             break;
         case 2:
-            return CGSizeMake(220, 120);
+            return CGSizeMake(100, 120);
             break;
         case 3:
-            return CGSizeMake(320, 100);
+            return CGSizeMake(40,60);
             break;
             
         default:

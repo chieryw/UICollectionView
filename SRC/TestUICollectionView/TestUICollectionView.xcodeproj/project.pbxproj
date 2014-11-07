@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C3E98E1A0C90C400A0393C /* Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C3E9891A0C90C400A0393C /* Mask.png */; };
+		29C3E98F1A0C90C400A0393C /* PullToRefreshCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C3E98B1A0C90C400A0393C /* PullToRefreshCoreTextView.m */; };
+		29C3E9901A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C3E98D1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m */; };
 		29E894CF1A09FC900000FA95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894CE1A09FC900000FA95 /* main.m */; };
 		29E894D21A09FC900000FA95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894D11A09FC900000FA95 /* AppDelegate.m */; };
 		29E894D51A09FC900000FA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894D41A09FC900000FA95 /* ViewController.m */; };
@@ -28,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29C3E9891A0C90C400A0393C /* Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mask.png; sourceTree = "<group>"; };
+		29C3E98A1A0C90C400A0393C /* PullToRefreshCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshCoreTextView.h; sourceTree = "<group>"; };
+		29C3E98B1A0C90C400A0393C /* PullToRefreshCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshCoreTextView.m; sourceTree = "<group>"; };
+		29C3E98C1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PullToRefreshCoreText.h"; sourceTree = "<group>"; };
+		29C3E98D1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PullToRefreshCoreText.m"; sourceTree = "<group>"; };
 		29E894C91A09FC900000FA95 /* TestUICollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUICollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E894CD1A09FC900000FA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29E894CE1A09FC900000FA95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +71,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29C3E9881A0C90C400A0393C /* PullToRefreshCoreText */ = {
+			isa = PBXGroup;
+			children = (
+				29C3E9891A0C90C400A0393C /* Mask.png */,
+				29C3E98A1A0C90C400A0393C /* PullToRefreshCoreTextView.h */,
+				29C3E98B1A0C90C400A0393C /* PullToRefreshCoreTextView.m */,
+				29C3E98C1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.h */,
+				29C3E98D1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m */,
+			);
+			path = PullToRefreshCoreText;
+			sourceTree = "<group>";
+		};
 		29E894C01A09FC900000FA95 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +104,7 @@
 		29E894CB1A09FC900000FA95 /* TestUICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				29C3E9881A0C90C400A0393C /* PullToRefreshCoreText */,
 				29E894D01A09FC900000FA95 /* AppDelegate.h */,
 				29E894D11A09FC900000FA95 /* AppDelegate.m */,
 				29E894D31A09FC900000FA95 /* ViewController.h */,
@@ -207,6 +228,7 @@
 				29E894D81A09FC900000FA95 /* Main.storyboard in Resources */,
 				29E894DD1A09FC900000FA95 /* LaunchScreen.xib in Resources */,
 				29E894DA1A09FC900000FA95 /* Images.xcassets in Resources */,
+				29C3E98E1A0C90C400A0393C /* Mask.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E894F41A0A03D40000FA95 /* CustomReusableView.m in Sources */,
+				29C3E98F1A0C90C400A0393C /* PullToRefreshCoreTextView.m in Sources */,
 				29E894D51A09FC900000FA95 /* ViewController.m in Sources */,
 				29E894D21A09FC900000FA95 /* AppDelegate.m in Sources */,
 				29E894CF1A09FC900000FA95 /* main.m in Sources */,
+				29C3E9901A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +442,7 @@
 				29E894EE1A09FC900000FA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29E894EF1A09FC900000FA95 /* Build configuration list for PBXNativeTarget "TestUICollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +451,7 @@
 				29E894F11A09FC900000FA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
