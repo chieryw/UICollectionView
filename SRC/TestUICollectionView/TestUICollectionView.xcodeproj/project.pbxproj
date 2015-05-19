@@ -10,6 +10,11 @@
 		29C3E98E1A0C90C400A0393C /* Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C3E9891A0C90C400A0393C /* Mask.png */; };
 		29C3E98F1A0C90C400A0393C /* PullToRefreshCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C3E98B1A0C90C400A0393C /* PullToRefreshCoreTextView.m */; };
 		29C3E9901A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C3E98D1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m */; };
+		29DFEBA61B0AE810002EA5C5 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFEBA51B0AE810002EA5C5 /* DemoViewController.m */; };
+		29DFEBAA1B0AEBF0002EA5C5 /* XIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFEBA81B0AEBF0002EA5C5 /* XIBViewController.m */; };
+		29DFEBAB1B0AEBF0002EA5C5 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFEBA91B0AEBF0002EA5C5 /* XIBViewController.xib */; };
+		29DFEBAF1B0B13C5002EA5C5 /* XIBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DFEBAD1B0B13C5002EA5C5 /* XIBCollectionViewCell.m */; };
+		29DFEBB01B0B13C5002EA5C5 /* XIBCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DFEBAE1B0B13C5002EA5C5 /* XIBCollectionViewCell.xib */; };
 		29E894CF1A09FC900000FA95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894CE1A09FC900000FA95 /* main.m */; };
 		29E894D21A09FC900000FA95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894D11A09FC900000FA95 /* AppDelegate.m */; };
 		29E894D51A09FC900000FA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E894D41A09FC900000FA95 /* ViewController.m */; };
@@ -36,6 +41,14 @@
 		29C3E98B1A0C90C400A0393C /* PullToRefreshCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshCoreTextView.m; sourceTree = "<group>"; };
 		29C3E98C1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PullToRefreshCoreText.h"; sourceTree = "<group>"; };
 		29C3E98D1A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PullToRefreshCoreText.m"; sourceTree = "<group>"; };
+		29DFEBA41B0AE810002EA5C5 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		29DFEBA51B0AE810002EA5C5 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		29DFEBA71B0AEBF0002EA5C5 /* XIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBViewController.h; sourceTree = "<group>"; };
+		29DFEBA81B0AEBF0002EA5C5 /* XIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBViewController.m; sourceTree = "<group>"; };
+		29DFEBA91B0AEBF0002EA5C5 /* XIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
+		29DFEBAC1B0B13C5002EA5C5 /* XIBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBCollectionViewCell.h; sourceTree = "<group>"; };
+		29DFEBAD1B0B13C5002EA5C5 /* XIBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBCollectionViewCell.m; sourceTree = "<group>"; };
+		29DFEBAE1B0B13C5002EA5C5 /* XIBCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBCollectionViewCell.xib; sourceTree = "<group>"; };
 		29E894C91A09FC900000FA95 /* TestUICollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUICollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E894CD1A09FC900000FA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29E894CE1A09FC900000FA95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,12 +122,20 @@
 				29E894D11A09FC900000FA95 /* AppDelegate.m */,
 				29E894D31A09FC900000FA95 /* ViewController.h */,
 				29E894D41A09FC900000FA95 /* ViewController.m */,
+				29DFEBA41B0AE810002EA5C5 /* DemoViewController.h */,
+				29DFEBA51B0AE810002EA5C5 /* DemoViewController.m */,
 				29E894D61A09FC900000FA95 /* Main.storyboard */,
 				29E894D91A09FC900000FA95 /* Images.xcassets */,
 				29E894DB1A09FC900000FA95 /* LaunchScreen.xib */,
 				29E894CC1A09FC900000FA95 /* Supporting Files */,
 				29E894F21A0A03D40000FA95 /* CustomReusableView.h */,
 				29E894F31A0A03D40000FA95 /* CustomReusableView.m */,
+				29DFEBA71B0AEBF0002EA5C5 /* XIBViewController.h */,
+				29DFEBA81B0AEBF0002EA5C5 /* XIBViewController.m */,
+				29DFEBA91B0AEBF0002EA5C5 /* XIBViewController.xib */,
+				29DFEBAC1B0B13C5002EA5C5 /* XIBCollectionViewCell.h */,
+				29DFEBAD1B0B13C5002EA5C5 /* XIBCollectionViewCell.m */,
+				29DFEBAE1B0B13C5002EA5C5 /* XIBCollectionViewCell.xib */,
 			);
 			path = TestUICollectionView;
 			sourceTree = "<group>";
@@ -225,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29DFEBB01B0B13C5002EA5C5 /* XIBCollectionViewCell.xib in Resources */,
+				29DFEBAB1B0AEBF0002EA5C5 /* XIBViewController.xib in Resources */,
 				29E894D81A09FC900000FA95 /* Main.storyboard in Resources */,
 				29E894DD1A09FC900000FA95 /* LaunchScreen.xib in Resources */,
 				29E894DA1A09FC900000FA95 /* Images.xcassets in Resources */,
@@ -246,11 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29DFEBAA1B0AEBF0002EA5C5 /* XIBViewController.m in Sources */,
 				29E894F41A0A03D40000FA95 /* CustomReusableView.m in Sources */,
 				29C3E98F1A0C90C400A0393C /* PullToRefreshCoreTextView.m in Sources */,
+				29DFEBAF1B0B13C5002EA5C5 /* XIBCollectionViewCell.m in Sources */,
 				29E894D51A09FC900000FA95 /* ViewController.m in Sources */,
 				29E894D21A09FC900000FA95 /* AppDelegate.m in Sources */,
 				29E894CF1A09FC900000FA95 /* main.m in Sources */,
+				29DFEBA61B0AE810002EA5C5 /* DemoViewController.m in Sources */,
 				29C3E9901A0C90C400A0393C /* UIScrollView+PullToRefreshCoreText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
